@@ -104,6 +104,7 @@ const Home: NextPage = () => {
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
                   GPT
+                  (无限版)
                 </span>
                 <PopIn delay={0.5}>
                   <Badge>Beta 🚀</Badge>
