@@ -67,7 +67,7 @@ class AutonomousAgent {
     }
 
     this.numLoops += 1;
-    const maxLoops = 99;
+    const maxLoops = 20;
     if (this.numLoops > maxLoops) {
       this.sendLoopMessage();
       this.shutdown();
