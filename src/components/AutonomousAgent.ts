@@ -67,12 +67,12 @@ class AutonomousAgent {
     }
 
     this.numLoops += 1;
-    const maxLoops = this.customApiKey === "" ? 4 : 25;
-    if (this.numLoops > maxLoops) {
-      this.sendLoopMessage();
-      this.shutdown();
-      return;
-    }
+    // const maxLoops = this.customApiKey === "" ? 4 : 25;
+    // if (this.numLoops > maxLoops) {
+    //   this.sendLoopMessage();
+    //   this.shutdown();
+    //   return;
+    // }
 
     // Wait before starting
     await new Promise((r) => setTimeout(r, 1000));
