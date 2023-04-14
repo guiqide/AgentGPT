@@ -89,7 +89,6 @@ const Drawer = ({
             text="Help"
             onClick={showHelp}
           />
-          <DrawerItem icon={<FaCog />} text="Settings" onClick={showSettings} />
           <DrawerItem
             icon={<FaDiscord />}
             text="Discord"

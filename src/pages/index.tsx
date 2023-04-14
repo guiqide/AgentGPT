@@ -16,7 +16,7 @@ import HelpDialog from "../components/HelpDialog";
 import SettingsDialog from "../components/SettingsDialog";
 
 const Home: NextPage = () => {
-  const [name, setName] = React.useState<string>("");
+  const [name, setName] = React.useState<string>("增长AI");
   const [goalInput, setGoalInput] = React.useState<string>("");
   const [agent, setAgent] = React.useState<AutonomousAgent | null>(null);
   const [customApiKey, setCustomApiKey] = React.useState<string>("");
@@ -26,6 +26,7 @@ const Home: NextPage = () => {
 
   const [showHelpDialog, setShowHelpDialog] = React.useState(false);
   const [showSettingsDialog, setShowSettingsDialog] = React.useState(false);
+
 
   useEffect(() => {
     const key = "agentgpt-modal-opened-new";
@@ -74,12 +75,12 @@ const Home: NextPage = () => {
         show={showHelpDialog}
         close={() => setShowHelpDialog(false)}
       />
-      <SettingsDialog
-        customApiKey={customApiKey}
-        setCustomApiKey={setCustomApiKey}
-        show={showSettingsDialog}
-        close={() => setShowSettingsDialog(false)}
-      />
+      {/*<SettingsDialog*/}
+      {/*  customApiKey={customApiKey}*/}
+      {/*  setCustomApiKey={setCustomApiKey}*/}
+      {/*  show={showSettingsDialog}*/}
+      {/*  close={() => setShowSettingsDialog(false)}*/}
+      {/*/>*/}
       <main className="flex h-screen w-screen flex-row">
         <Drawer
           showHelp={() => setShowHelpDialog(true)}

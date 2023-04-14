@@ -4,8 +4,7 @@ import { LLMChain } from "langchain/chains";
 
 export const createModel = (customApiKey: string) =>
   new OpenAI({
-    openAIApiKey:
-      customApiKey === "" ? process.env.OPENAI_API_KEY : customApiKey,
+    openAIApiKey: process.env.OPENAI_API_KEY,
     temperature: 0.9,
     modelName: "gpt-3.5-turbo",
     maxTokens: 300,
